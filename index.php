@@ -74,4 +74,6 @@ $main = new Main($outlineUrl);
 // $main->editAccessKeyName('access_key_id', 'new_name', 123);
 
 // View access key information
-$main->viewAccessKeyInfo('3', 'FJqtuunH8GihgOCz6TD1Rj');
+// $main->viewAccessKeyInfo('3', 'FJqtuunH8GihgOCz6TD1Rj');
+
+var_dump($main->getAccessKeyList());
