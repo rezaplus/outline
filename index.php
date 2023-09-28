@@ -66,6 +66,8 @@ class Main {
     public function getAccessKeylist(){
         try{
             var_dump($this->outline->getAccessKeyList());
+        } catch (Exception $e) {
+            echo "Error: " . $e->getMessage() . "\n";
         }
     }
 
