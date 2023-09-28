@@ -61,6 +61,14 @@ class Main {
             echo "Error: " . $e->getMessage() . "\n";
         }
     }
+
+
+    public function getAccessKeylist(){
+        try{
+            var_dump($this->outline->getAccessKeyList());
+        }
+    }
+
 }
 
 // Usage example:
@@ -76,4 +84,4 @@ $main = new Main($outlineUrl);
 // View access key information
 // $main->viewAccessKeyInfo('3', 'FJqtuunH8GihgOCz6TD1Rj');
 
-var_dump($main->getAccessKeyList());
+$main->getAccessKeylist();
